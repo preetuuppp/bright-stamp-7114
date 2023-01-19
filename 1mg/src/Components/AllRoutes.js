@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Home from '../pages/Home';
+// import Home from '../pages/Home';
 import Medicines from '../pages/Medicines';
 import Login from '../pages/Login';
 
@@ -14,8 +14,8 @@ const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/medicines' element={<Medicines/>} />
+        {/* <Route path='/' element={<Home/>}/> */}
+        <Route path='/' element={<Medicines/>} />
         <Route path="/labtest" element={<LabTest/>}/>
         <Route path='/consultentdoctor' element={<ConsultentDoctor/>}/>
         <Route path='/ayurveda' element={<Ayurveda/>}/>
