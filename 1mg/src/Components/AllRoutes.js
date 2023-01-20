@@ -10,6 +10,7 @@ import ConsultentDoctor from '../pages/ConsultentDoctor';
 import CarePlan from '../pages/CarePlan';
 import LabTest from '../pages/LabTest';
 import Ayurveda from '../pages/Ayurveda';
+import Package from '../pages/InNav';
 const AllRoutes = () => {
   return (
     <div>
@@ -23,6 +24,9 @@ const AllRoutes = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/package' element={
+       <Package/>
+        }/>
       </Routes>
     </div>
   )
