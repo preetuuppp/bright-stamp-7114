@@ -1,19 +1,35 @@
-// import React from 'react'
 
-// const CardSwiper = (props) => {
-// const{image_url,title} = props.data
-//   return (
-//     <div>
-//       <div className="card" style="width: 18rem;">
-//   {/* <img src={image_url} className="card-img-top" alt="..."/> */}
-//   <div className="card-body">
-//     <h5 className="card-title">{title}</h5>
-    
-//     <a href="#" className="btn btn-primary">See More</a>
-//   </div>
-// </div>
-//     </div>
-//   )
-// }
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react'
 
-// export default CardSwiper
+import { Card,Button } from 'react-bootstrap';
+
+// import Dabar from "./Dabar";
+
+
+
+
+
+const CardSwiper = (props) => {
+
+    const{imgSrc,title}=props.data
+
+
+
+
+  return (
+    <div>
+      <Card className='p-0 overflow-hidden h-100 shadow' style={{height:'50px',borderRadius:'50px'}}>
+        <div className='overflow-hidden rounded p-0 bg-light'>
+            <Card.Img varient='top' src={imgSrc} width={30}/>
+        </div>
+        <Card.Body className='text-center'>
+        {/* <Card.Title className='display-3'>{title}</Card.Title> */}
+
+</Card.Body>
+      </Card>
+    </div>
+  )
+}
+
+export default CardSwiper

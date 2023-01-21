@@ -12,6 +12,9 @@ import "./swiper.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import Footer from "./Footer";
+import Partners from "./Partners";
+import Supliments from "./Supliments";
 const Medicines = () => {
   return (
     <div>
@@ -94,7 +97,12 @@ const Medicines = () => {
       </div>
       </div>
       <h1 style={{fontSize:'25px',margin:'10px'}}> India’s Leading Online Pharmacy & Healthcare Platform</h1>
-     <Brands/>
+     <div style={{border:'6px solid whiteSmoke'}}><Brands/></div>
+     <div style={{border:'6px solid whiteSmoke'}}><Supliments/></div>
+     
+     
+     <Partners/>
+     <Footer/>
     </div>
   );
 };

@@ -6,10 +6,10 @@ import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import CardSwiper from "./CardSwiper";
-import { Button } from "react-bootstrap";
+
 import { useNavigate } from 'react-router-dom';
 // https://backend-json.vercel.app/featureBrand
-const Brands = () => {
+const Supliments = () => {
 
   const navigate=useNavigate();
 
@@ -48,7 +48,7 @@ const Brands = () => {
         >
           <SwiperSlide>
             <CardSwiper
-            data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1641187637/lcfd1eufwbtituwyswpi.jpg" 
+            data={{imgSrc: "https://img5.hkrtcdn.com/19809/prd_1980864-HK-Vitals-Multivitamin-Women-by-HealthKart-60-tablets-Unflavoured_c_l.jpg" 
             }} 
           />
          
@@ -56,31 +56,31 @@ const Brands = () => {
           </SwiperSlide>
           <SwiperSlide>
             <CardSwiper
-            data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1642586423/uq1gwxslqqrxxwv6zi6j.jpg"}}
+            data={{imgSrc: "https://rukminim1.flixcart.com/image/416/416/xif0q/vitamin-supplement/c/b/9/60-cold-pressed-organic-flax-seeds-oil-capsules-1250mg-with-original-imaghhwgxuhfqcjw.jpeg?q=70"}}
             />
             <div style={{border:'1px solid white',borderRadius:'20px' ,background:'#f56567',marginTop:'5px'}}><button className='w=50 rounded-50' style={{color:"white"}} variant='Crimson' onClick={handleClick}>See All</button></div>
           </SwiperSlide>
           <SwiperSlide>
             <CardSwiper
-            data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525304/kfyx5kvvn2ai5fwswhsa.png"}}
+            data={{imgSrc: "https://onemg.gumlet.io/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/ceb8xikygjrjocx1t0vl.jpg"}}
             />
             <div style={{border:'1px solid white',borderRadius:'20px' ,background:'#f56567',marginTop:'5px'}}><button className='w=50 rounded-50' style={{color:"white"}} variant='Crimson' onClick={handleClick}>See All</button></div>
           </SwiperSlide>
            <SwiperSlide>
             <CardSwiper
-            data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525284/cabpuknnlyyzgqfnb4x5.png" }}
+            data={{imgSrc: "https://cdn.shopify.com/s/files/1/0160/3102/3204/products/DailyGreensCapsules.jpg?v=1645397601" }}
             />
             <div style={{border:'1px solid white',borderRadius:'20px' ,background:'#f56567',marginTop:'5px'}}><button className='w=50 rounded-50' style={{color:"white"}} variant='Crimson' onClick={handleClick}>See All</button></div>
           </SwiperSlide>
           <SwiperSlide>
             <CardSwiper
-            data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525168/p1blaka183nc1zlil8tq.png"}}
+            data={{imgSrc: "https://m.media-amazon.com/images/I/5118phZ-EWL.jpg"}}
             />
             <div style={{border:'1px solid white',borderRadius:'20px' ,background:'#f56567',marginTop:'5px'}}><button className='w=50 rounded-50' style={{color:"white"}} variant='Crimson' onClick={handleClick}>See All</button></div>
           </SwiperSlide>
           <SwiperSlide>
             <CardSwiper
-            data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1624525147/qjfdkz5njmk9n7vvrbb3.png"}}
+            data={{imgSrc: "https://cdn.shopify.com/s/files/1/0065/0651/2502/files/2_7356c465-1321-4cee-b383-36d5d8b49287.jpg?v=1649935655"}}
             />
             <div style={{border:'1px solid white',borderRadius:'20px' ,background:'#f56567',marginTop:'5px'}}><button className='w=50 rounded-50' style={{color:"white"}} variant='Crimson' onClick={handleClick}>See All</button></div>
           </SwiperSlide>
@@ -97,4 +97,4 @@ const Brands = () => {
   );
 };
 
-export default Brands;
+export default Supliments;
