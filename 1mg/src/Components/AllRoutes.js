@@ -11,6 +11,9 @@ import CarePlan from '../pages/CarePlan';
 import LabTest from '../pages/LabTest';
 import Ayurveda from '../pages/Ayurveda';
 import Package from '../pages/InNav';
+import Dabar from '../pages/Dabar';
+import Footer from '../pages/Footer';
+import Personal from '../pages/Personal';
 const AllRoutes = () => {
   return (
     <div>
@@ -24,6 +27,9 @@ const AllRoutes = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<SignUp/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/footer' element={<Footer/>}/>
+        <Route path='/dabar' element={<Dabar/>}/>
+        <Route path='/personal' element={<Personal/>}/>
         <Route path='/package' element={
        <Package/>
         }/>

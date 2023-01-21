@@ -1,6 +1,15 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 const InNav = () => {
+  const navigate=useNavigate();
+  const handleClick=() => {
+    navigate('/ayurveda');
+  }
+
+  const personalClick=() => {
+    navigate('/personal');
+  }
+  
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,8 +21,8 @@ const InNav = () => {
     <div className="collapse navbar-collapse" id="navbarNavlightDropdown">
       <ul className="navbar-nav">
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarlightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Ayurveda Products
+          <a className="nav-link dropdown-toggle" href="#" id="navbarlightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={handleClick}>
+          Ayurveda
           </a>
           <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarlightDropdownMenuLink">
             <li><a className="dropdown-item" href="#">Kerala Ayurveda</a></li>
@@ -84,7 +93,7 @@ Sexual Wellness</a></li>
     <div className="collapse navbar-collapse" id="navbarNavlightDropdown">
       <ul className="navbar-nav">
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarlightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarlightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={personalClick}>
           Personal Care
           </a>
           <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarlightDropdownMenuLink">
