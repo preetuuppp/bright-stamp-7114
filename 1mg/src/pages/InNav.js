@@ -9,7 +9,9 @@ const InNav = () => {
   const personalClick=() => {
     navigate('/personal');
   }
-  
+const allClick=()=>{
+  navigate('/main');
+}
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -107,14 +109,10 @@ Sexual Wellness</a></li>
     <div className="collapse navbar-collapse" id="navbarNavlightDropdown">
       <ul className="navbar-nav">
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarlightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Health Conditions
+          <a className="nav-link dropdown-toggle" href="#" id="navbarlightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={allClick}>
+       View All
           </a>
-          <ul className="dropdown-menu dropdown-menu-light" aria-labelledby="navbarlightDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">Health Conditions</a></li>
-            <li><a className="dropdown-item" href="#">Health Conditions</a></li>
-            <li><a className="dropdown-item" href="#">Kidney Care</a></li>
-          </ul>
+          
         </li>
       </ul>
     </div>
