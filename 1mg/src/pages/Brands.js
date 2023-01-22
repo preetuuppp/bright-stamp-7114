@@ -6,7 +6,7 @@ import { FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import CardSwiper from "./CardSwiper";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
 // https://backend-json.vercel.app/featureBrand
 const Brands = () => {
@@ -51,8 +51,8 @@ const Brands = () => {
             data={{imgSrc: "https://onemg.gumlet.io/image/upload/w_150,h_150,c_fit,a_ignore,q_auto,f_auto/v1641187637/lcfd1eufwbtituwyswpi.jpg" 
             }} 
           />
-         
             <div style={{border:'1px solid white',borderRadius:'20px' ,background:'#f56567',marginTop:'5px'}}><button className='w=50 rounded-50' style={{color:"white"}} variant='Crimson' onClick={handleClick}>See All</button></div>
+         
           </SwiperSlide>
           <SwiperSlide>
             <CardSwiper

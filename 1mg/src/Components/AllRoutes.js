@@ -14,6 +14,10 @@ import Package from '../pages/InNav';
 import Dabar from '../pages/Dabar';
 import Footer from '../pages/Footer';
 import Personal from '../pages/Personal';
+import AllData from '../pages/AllData';
+import Private from './Private';
+import SingleProductPage from '../pages/SingleProductPage';
+import NotFound from '../pages/NotFound';
 const AllRoutes = () => {
   return (
     <div>
@@ -30,8 +34,13 @@ const AllRoutes = () => {
         <Route path='/footer' element={<Footer/>}/>
         <Route path='/dabar' element={<Dabar/>}/>
         <Route path='/personal' element={<Personal/>}/>
-        <Route path='/package' element={
-       <Package/>
+        <Route path='*' element={<NotFound/>}/>
+        <Route path='/main' element={<AllData/>}/>
+        <Route path='/package' element={ <Package/>}/>
+        <Route path='/main/:main_id' element={
+        <Private> 
+<SingleProductPage/>
+        </Private>
         }/>
       </Routes>
     </div>

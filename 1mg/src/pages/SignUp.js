@@ -17,6 +17,7 @@ import {
   useBreakpointValue,
  
 } from '@chakra-ui/react';
+import Footer from './Footer';
 
 const avatars = [
   {
@@ -67,7 +68,7 @@ const loginClick=(e)=>{
 
 
   return (
-   
+    <>
     <Box position={'relative'}>
       <Container
         as={SimpleGrid}
@@ -228,6 +229,8 @@ Terms and Conditions & Privacy Policy
       </Container>
      
     </Box>
+<Footer/>
+    </>
   );
 }
 

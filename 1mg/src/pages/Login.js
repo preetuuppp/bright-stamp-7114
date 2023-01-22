@@ -1,4 +1,5 @@
-import React from 'react';
+// import React, { useContext } from 'react'
+import AuthContext from '../context/AuthContext';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -17,6 +18,8 @@ import {
   useBreakpointValue,
  
 } from '@chakra-ui/react';
+import Footer from './Footer';
+import { useContext } from 'react';
 
 const avatars = [
   {
@@ -42,6 +45,7 @@ const avatars = [
 ];
 
 export default function Login() {
+  const{isAuth}=useContext(AuthContext)
 const[email,setEmail]=useState("")
 const[password,setPassword]=useState('')
 const[error,setError]=useState('')
@@ -53,8 +57,8 @@ e.preventDefault();
 
 if(!email||!password){
   setError("All fields are required")
-}else{
-navigate('/');
+}else if(!isAuth){
+navigate('/login');
 }
 setEmail('')
 setPassword('')
@@ -67,7 +71,7 @@ const signupClick=(e)=>{
 
 
   return (
-   
+    <>
     <Box position={'relative'}>
       <Container
         as={SimpleGrid}
@@ -217,6 +221,8 @@ Terms and Conditions & Privacy Policy
       </Container>
      
     </Box>
+    <Footer/>
+     </>
   );
 }
 

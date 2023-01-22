@@ -1,6 +1,6 @@
 import React from "react";
-import InNav from "./InNav";
-import Search from "./Search";
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import Brands from "./Brands";
 // import { AiFillPlusSquare } from "react-icons/ai";
@@ -19,9 +19,9 @@ const Medicines = () => {
   return (
     <div>
       <hr />
-      <Search />
+     
       <hr />
-      <InNav />
+    
       <div style={{border:'6px solid whiteSmoke'}}>
       <div
         style={{

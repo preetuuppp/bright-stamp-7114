@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const ConsultentDoctor = () => {
   return (
     <div>
-      Consultent Doctor
+      <h1>Consultnant Docotr</h1>
     </div>
-  )
-}
+  );
+};
 
-export default ConsultentDoctor
+export default ConsultentDoctor;
